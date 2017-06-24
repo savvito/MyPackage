@@ -9,7 +9,7 @@
 #' @return This function returns a tibble with the FARS data
 #'
 #' @importFrom readr read_csv
-#' @importFrom diplyr tbl_df
+#' @importFrom dplyr tbl_df
 #'
 #' @examples
 #' \dontrun{fars_read("accident_2014.csv")}
@@ -58,7 +58,7 @@ make_filename <- function(year) {
 #'    element.
 #'
 #' @importFrom readr read_csv
-#' @importFrom diplyr mutate select tbl_df
+#' @importFrom dplyr mutate select tbl_df
 #'
 #' @examples
 #' \dontrun{fars_read_years(c(2013,2015))}
@@ -92,7 +92,7 @@ fars_read_years <- function(years) {
 #'    that year.
 #'
 #' @importFrom readr read_csv
-#' @importFrom diplyr bind_rows group by summarize tbl_df
+#' @importFrom dplyr bind_rows group by summarize tbl_df
 #' @importFrom tidyr spread
 #'
 #' @examples
@@ -123,7 +123,7 @@ fars_summarize_years <- function(years) {
 #'    that year.
 #'
 #' @importFrom readr read_csv
-#' @importFrom diplyr tbl_df filter
+#' @importFrom dplyr tbl_df filter
 #' @importFrom maps map
 #'
 #' @examples
