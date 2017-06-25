@@ -92,7 +92,7 @@ fars_read_years <- function(years) {
 #'    that year.
 #'
 #' @importFrom readr read_csv
-#' @importFrom dplyr bind_rows group by summarize tbl_df
+#' @importFrom dplyr bind_rows group_by summarize tbl_df
 #' @importFrom tidyr spread
 #'
 #' @examples
